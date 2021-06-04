@@ -8,6 +8,7 @@ public class Citta {
 	private String nome;
 	private List<Rilevamento> rilevamenti;
 	private int counter = 0;
+	private int numeroGiorni=0;
 	
 	
 	
@@ -54,6 +55,17 @@ public class Citta {
 		int result = 1;
 		result = prime * result + ((nome == null) ? 0 : nome.hashCode());
 		return result;
+	}
+	
+
+	public int getNumeroGiorni() {
+		return numeroGiorni;
+	}
+	public void incrementaGiorni(){
+		
+		numeroGiorni++;
+		
+		
 	}
 
 	@Override
